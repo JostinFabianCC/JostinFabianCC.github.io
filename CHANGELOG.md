@@ -11,6 +11,10 @@ All notable changes to this project will be documented in this file.
 - Improved layout and accessibility of the portfolio (`feature/add-portfolio-layout`).
 - Enhanced the color palette for better contrast and usability (`feature/add-portfolio-layout`).
 - Refined text sizes and spacing for better readability (`feature/add-portfolio-layout`).
+- Created a custom deployment configuration for GitHub Actions to automate deployment to GitHub
+  Pages (`feature/github-actions-deployment`).
+- Added a workflow (`deploy.yml`) that deploys the content of `src/` to GitHub
+  Pages.  (`feature/github-actions-deployment`).
 
 ### Changed
 
