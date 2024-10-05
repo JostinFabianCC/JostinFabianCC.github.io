@@ -1,0 +1,46 @@
+/* Variables de colores */
+:root {
+    --color-primary: #1e40af; /* Azul oscuro */
+    --color-secondary: #f97316; /* Naranja */
+    --color-bg: #f8fafc; /* Fondo claro */
+    --color-text: #1f2937; /* Gris oscuro para textos */
+    --color-text-muted: #6b7280; /* Texto secundario */
+    --color-link: #2563eb; /* Color de enlace */
+    --color-link-hover: #1e3a8a; /* Color de enlace al hacer hover */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.flag-btn {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.flag-btn:hover,
+.flag-btn:focus {
+    transform: scale(1.2);
+    background-color: var(--color-bg);
+    outline: none;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: var(--color-primary);
+    bottom: -5px;
+    left: 0;
+}

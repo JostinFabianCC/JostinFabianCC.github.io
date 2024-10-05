@@ -6,8 +6,105 @@
     <meta name="description" content="Personal portfolio of Jostin">
     <title>Jostin - Personal Website</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+    <!--Flagicon CDN-->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"
+    />
+
 </head>
-<body>
-<script src="js/main.js"></script>
+<body class="bg-gray-50 text-gray-900">
+
+<!-- Header -->
+<header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-3xl font-extrabold text-blue-700">My Portfolio</h1>
+        <nav aria-label="Main navigation">
+            <ul class="flex space-x-4 text-lg font-semibold">
+                <li><a href="#about" class="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                       id="nav-about">About</a></li>
+                <li><a href="#experience"
+                       class="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                       id="nav-experience">Experience</a></li>
+                <li><a href="#projects" class="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                       id="nav-projects">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                       id="nav-contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="flex space-x-2">
+            <!-- Language Selector with Icons -->
+            <button class="fi fi-gb flag-btn" id="btn-en" title="English" aria-label="Switch to English"></button>
+            <button class="fi fi-es flag-btn" id="btn-es" title="Español" aria-label="Cambiar a Español"></button>
+            <button class="fi fi-es-ct flag-btn" id="btn-ca" title="Català" aria-label="Canviar a Català"></button>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto px-4 py-12">
+    <!-- About Section -->
+    <section id="about" class="mb-16 text-center">
+        <h2 class="section-title text-4xl font-bold text-blue-800" id="about-title">About Me</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto" id="about-description">
+            I am a software developer with experience in creating robust, user-centric applications. I have a passion
+            for learning new technologies and enhancing user experiences through innovative solutions.
+        </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="mb-16 text-center">
+        <h2 class="section-title text-4xl font-bold text-blue-800" id="experience-title">Experience</h2>
+        <ul id="experience-list" class="space-y-6">
+            <li class="bg-white shadow-md p-6 rounded-lg text-left">
+                <h3 class="text-2xl font-semibold text-blue-700" id="job-title">.NET Developer at Quadis</h3>
+                <p class="text-gray-600" id="job-description">Developed scalable web applications using .NET Core and
+                    Blazor. Implemented Domain Driven Design (DDD) and optimized deployment pipelines with Azure
+                    DevOps.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mb-16 text-center">
+        <h2 class="section-title text-4xl font-bold text-blue-800" id="projects-title">Projects</h2>
+        <div id="projects-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Placeholder Projects -->
+            <div class="bg-white shadow-md p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold text-blue-700">Project One</h3>
+                <p class="text-gray-600">Description of the first project and its main features.</p>
+            </div>
+            <div class="bg-white shadow-md p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold text-blue-700">Project Two</h3>
+                <p class="text-gray-600">Description of the second project and its main features.</p>
+            </div>
+            <div class="bg-white shadow-md p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold text-blue-700">Project Three</h3>
+                <p class="text-gray-600">Description of the third project and its main features.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="text-center">
+        <h2 class="section-title text-4xl font-bold text-blue-800" id="contact-title">Contact</h2>
+        <p id="contact-description" class="text-lg text-gray-600 max-w-3xl mx-auto">Feel free to reach out via email or
+            connect with me on social media platforms like LinkedIn or GitHub.</p>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-200 py-6">
+    <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2024 Jostin - All rights reserved</p>
+    </div>
+</footer>
+
+<!-- JavaScript para cambiar de idioma -->
+<script src="src/js/main.js"></script>
 </body>
 </html>
