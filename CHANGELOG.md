@@ -1,23 +1,40 @@
 # Changelog
 
-Todos los cambios notables de este proyecto se documentarán en este archivo.
+All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+
+## [v1.1.0] - 2024-10-06
+
+### Added
+
+- Improved layout and accessibility of the portfolio (`feature/add-portfolio-layout`).
+- Enhanced the color palette for better contrast and usability (`feature/add-portfolio-layout`).
+- Refined text sizes and spacing for better readability (`feature/add-portfolio-layout`).
+
+### Changed
+
+- Updated design of the navigation menu with better focus states (`feature/add-portfolio-layout`).
+- Adjusted flag icons in the language selector to scale smoothly (`feature/add-portfolio-layout`).
+
+### Fixed
+
+- Fixed minor alignment issues in the project cards (`feature/add-portfolio-layout`).
 
 ## [v1.0.0] - 2024-10-05
 
 ### Added
 
-- Estructura inicial del proyecto con soporte para HTML, CSS, y JavaScript (`feature/setup-project`).
-- Configuración de `README.md` con descripción básica y estructura inicial.
-- Archivos de traducción (`en.json`, `es.json`, `ca.json`) para el contenido de la página.
-- Configuración básica de TailwindCSS para la maquetación de la página.
-- Página de inicio (`index.html`) con contenido estático y maquetación básica.
+- Initial project structure with support for HTML, CSS, and JavaScript (`feature/setup-project`).
+- Configuration of `README.md` with basic description and initial structure.
+- Translation files (`en.json`, `es.json`, `ca.json`) for the page content.
+- Basic TailwindCSS configuration for page layout.
+- Home page (`index.html`) with static content and basic layout.
 
 ### Changed
 
-- Primera versión del proyecto
+- First version of the project.
 
 ### Fixed
 
-- Primera versión del proyecto
+- First version of the project.
